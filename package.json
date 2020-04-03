@@ -1,0 +1,25 @@
+{
+  "name": "eat-a-burger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
+  "main": "server.js",
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeasir01/eat-a-burger.git"
+  },
+  "author": "Yeasir Hugais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeasir01/eat-a-burger/issues"
+  },
+  "homepage": "https://github.com/yeasir01/eat-a-burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.1",
+    "mysql": "^2.18.1"
+  }
+}
