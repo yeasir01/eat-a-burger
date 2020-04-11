@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/yeasir01/eat-a-burger#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^4.0.1",
-    "mysql": "^2.18.1"
+    "express": "*",
+    "express-handlebars": "*",
+    "mysql": "*"
   }
 }
