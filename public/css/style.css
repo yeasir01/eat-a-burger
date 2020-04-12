@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@300;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/blur-blurry-bokeh-close-up-347139.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.grid-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "img img"
+    "form form"
+    "left right";
+}
+
+.img,
+.form,
+.left-div,
+.right-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  grid-area: img;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.img h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.img img {
+  max-width: 720px;
+  width: 100%;
+}
+
+.form {
+  grid-area: form;
+  vertical-align: middle;
+}
+
+.form .form-back {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px 60px;
+  border-radius: 3px;
+}
+
+.form .form-back label {
+  font-weight: 600;
+}
+
+.form .form-back label input {
+  height: 26px;
+  border: 1px solid rgb(128, 128, 128);
+  margin-left: 5px;
+}
+
+.submit {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+
+.submit:hover {
+  background-color: #e94634;
+}
+
+.left-div, .right-div {
+  flex-direction: column;
+  height: 100%;
+}
+
+.left-div {
+  grid-area: left;
+  background-color: #fff;
+}
+
+.right-div {
+  grid-area: right;
+  background-color: antiquewhite;
+}
