@@ -1,0 +1,14 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Al6+Ts8&Xv8-",
+    "database": "burger_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
