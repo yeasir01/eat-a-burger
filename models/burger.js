@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
         burger: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true
+            unique: false
         },
         devoured: {
             type: DataTypes.BOOLEAN,
