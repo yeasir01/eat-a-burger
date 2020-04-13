@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .grid-container {
@@ -46,12 +46,13 @@ body {
 .img h1 {
   font-family: "Luckiest Guy", cursive;
   color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #db4332;
   margin-top: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .img img {
-  max-width: 720px;
+  max-width: 600px;
   width: 100%;
 }
 
@@ -64,19 +65,22 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 30px 60px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: row;
 }
 
 .form .form-back label {
-  font-weight: 600;
+  font-weight: 500;
+  margin-right: 5px;
+  line-height: 26px;
 }
 
-.form .form-back label input {
+.form .form-back input {
   height: 26px;
   border: 1px solid rgb(128, 128, 128);
-  margin-left: 5px;
 }
 
-.submit {
+.btn {
   background-color: #c0392b;
   color: #fff;
   border: none;
@@ -86,13 +90,14 @@ body {
   transition: ease-in-out 300ms;
 }
 
-.submit:hover {
+.btn:hover {
   background-color: #e94634;
 }
 
 .left-div, .right-div {
   flex-direction: column;
   height: 100%;
+  padding: 24px;
 }
 
 .left-div {
@@ -103,4 +108,38 @@ body {
 .right-div {
   grid-area: right;
   background-color: antiquewhite;
+}
+
+.burgerQ, .burgerD {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.burgerQ li, .burgerD li {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-device-width: 568px) {
+  .grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas:
+      "img"
+      "form"
+      "left"
+      "right";
+  }
+
+  .form .form-back {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form .form-back label {
+    margin-bottom: 10px;
+  }
 }
