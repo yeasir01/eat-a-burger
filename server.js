@@ -1,5 +1,5 @@
 "use strict";
-
+var compression = require('compression')
 var express = require("express");
 var exphbs = require("express-handlebars");
 var mysql = require("mysql");
