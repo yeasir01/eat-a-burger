@@ -2,7 +2,6 @@
 var compression = require('compression')
 var express = require("express");
 var exphbs = require("express-handlebars");
-var mysql = require("mysql");
 var db = require("./models")
 
 var app = express();
